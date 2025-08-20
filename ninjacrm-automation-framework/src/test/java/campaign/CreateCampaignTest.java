@@ -12,34 +12,26 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class CreateCampaignTest {
 	public static void main(String[] args) throws IOException, InterruptedException {
-		FileInputStream fis = new FileInputStream("C:\\Users\\User\\Basic_Selenium\\ninjacrm-automation-framework\\src\\test\\resources\\commonData.properties");
-		
-		Properties pObj = new Properties();
-		pObj.load(fis);
-		
-		String BROWSER = pObj.getProperty("bro");
-		String URL = pObj.getProperty("url");
-		String USERNAME = pObj.getProperty("un");
-		String PASSWORD = pObj.getProperty("pwd");
-		
 		WebDriver driver = null;
 		
-		if (BROWSER.equalsIgnoreCase("chrome")) {
+		String BROWSER = "edge";
+		
+		if (BROWSER.contains("chrome")) {
 			driver = new ChromeDriver();
 		} else if (BROWSER.equalsIgnoreCase("edge")){
 			driver = new EdgeDriver();
-		}else {
+		} else {
 			driver = new EdgeDriver();
 		}
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
-		driver.get(URL);
+		driver.get("http://49.249.28.218:8098/");
 		
 //		login
-		driver.findElement(By.id("username")).sendKeys(USERNAME);
-		driver.findElement(By.id("inputPassword")).sendKeys(PASSWORD);
+		driver.findElement(By.id("username")).sendKeys("Rmgyantra");
+		driver.findElement(By.id("inputPassword")).sendKeys("rmgy@9999");
 		driver.findElement(By.xpath("//button[text()='Sign In']")).click();
 		
 		
