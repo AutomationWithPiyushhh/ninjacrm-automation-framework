@@ -1,9 +1,7 @@
 package campaign;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,7 +31,6 @@ public class CreateCampaignTest {
 		driver.findElement(By.id("username")).sendKeys("Rmgyantra");
 		driver.findElement(By.id("inputPassword")).sendKeys("rmgy@9999");
 		driver.findElement(By.xpath("//button[text()='Sign In']")).click();
-		
 		
 //		Create campaign
 		driver.findElement(By.linkText("Campaigns")).click();
