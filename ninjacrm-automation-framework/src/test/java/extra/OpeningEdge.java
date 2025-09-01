@@ -1,15 +1,23 @@
 package extra;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class OpeningEdge {
 	public static void main(String[] args) throws InterruptedException {
-		
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\User\\Basic_Selenium\\ninjacrm-automation-framework\\resources\\msedgedriver.exe");
-		
+				
 		WebDriver driver = new EdgeDriver();
 		Thread.sleep(3000);
+		
+		driver.get("http://localhost:8888/");
+		
+		WebElement un = driver.findElement(By.name("user_name"));
+		driver.navigate().refresh();
+		un.sendKeys("admin");
+		
+		Thread.sleep(2000);
 		driver.quit();
 	}
 }
