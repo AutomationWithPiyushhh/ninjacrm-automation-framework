@@ -7,54 +7,75 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import generic_utility.FileUtility;
+import object_repository.CampaignPage;
+import object_repository.HomePage;
+import object_repository.LoginPage;
 
 public class CreateCampaignTest {
 	public static void main(String[] args) throws IOException, InterruptedException {
+
+//		Get the data from properties file
+		FileUtility fUtil = new FileUtility();
+		String BROWSER = fUtil.getDataFromPropFile("bro");
+		String URL = fUtil.getDataFromPropFile("url");
+		String USERNAME = fUtil.getDataFromPropFile("un");
+		String PASSWORD = fUtil.getDataFromPropFile("pwd");
+
 		WebDriver driver = null;
-		
-		String BROWSER = "edge";
-		
+
 		if (BROWSER.contains("chrome")) {
 			driver = new ChromeDriver();
-		} else if (BROWSER.equalsIgnoreCase("edge")){
+		} else if (BROWSER.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
 		} else {
 			driver = new EdgeDriver();
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		
-		driver.get("http://49.249.28.218:8098/");
-		
-//		login
-		driver.findElement(By.id("username")).sendKeys("Rmgyantra");
-		driver.findElement(By.id("inputPassword")).sendKeys("rmgy@9999");
-		driver.findElement(By.xpath("//button[text()='Sign In']")).click();
-		
+
+//		Login
+		driver.get(URL);
+
+		LoginPage lp = new LoginPage(driver);
+		lp.getUn().sendKeys(USERNAME);
+		lp.getPwd().sendKeys(PASSWORD);
+		lp.getSignIn().click();
+
 //		Create campaign
-		driver.findElement(By.linkText("Campaigns")).click();
-		
-		driver.findElement(By.xpath("//span[text()='Create Campaign']")).click();
-			
-//		driver.findElement(By.name("expectedCloseDate")).sendKeys("2025-08-15");
-		
 		String cName = "kjhbvcdrtgvcfg";
-		
-		driver.findElement(By.name("campaignName")).sendKeys(cName);
-		
-		driver.findElement(By.name("targetSize")).sendKeys("15");
-		
-		driver.findElement(By.xpath("//button[text()='Create Campaign']")).click();
-		
+
+		HomePage hp = new HomePage(driver);
+		hp.getCamp().click();
+
+		CampaignPage cp = new CampaignPage(driver);
+
+		cp.getCreateCamp().click();
+		cp.getCampName().sendKeys(cName);
+		cp.getTargetSize().sendKeys("15");
+		cp.getCreateCampButton().click();
+
 //		Verification
-		String actcName = driver.findElement(By.xpath("//td[text()='"+cName+"']")).getText();
+		String actcName = driver.findElement(By.xpath("//td[text()='" + cName + "']")).getText();
 		if (actcName.equals(cName)) {
 			System.out.println("Campaign Created Successfully!!!");
 		}
+
+//		Logout
 		
+		driver.findElement(By.xpath("//button[@aria-label='close']")).click();
 		
-		Thread.sleep(2000);
+		Actions act = new Actions(driver);
+		act.moveToElement(hp.getProfile()).build().perform();
+
+	
+		hp.getLogOut().click();
+
 		driver.quit();
 	}
 }

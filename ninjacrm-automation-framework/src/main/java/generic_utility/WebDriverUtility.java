@@ -42,22 +42,5 @@ public class WebDriverUtility {
 		act.contextClick(element).build().perform();
 	}
 
-	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.facebook.com/");
-
-		WebElement target = driver.findElement(By.linkText("Create a Page"));
-
-		WebDriverUtility wdUtil = new WebDriverUtility(driver);
-
-//		Actions act = new Actions(driver);
-//		act.moveToElement(target).build().perform();
-
-		wdUtil.hover(target);
-
-		wdUtil.rightClick(target);
-
-		Thread.sleep(3000);
-		driver.quit();
-	}
+	
 }

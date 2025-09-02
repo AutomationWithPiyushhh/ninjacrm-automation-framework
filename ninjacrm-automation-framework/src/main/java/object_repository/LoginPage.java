@@ -57,18 +57,4 @@ public class LoginPage {
 		return createAcc;
 	}
 
-	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
-		driver.get("http://49.249.28.218:8098/");
-
-//		WebElement un = driver.findElement(By.id("username"));
-		
-		LoginPage lp = new LoginPage(driver);
-		WebElement un = lp.getUn();
-		
-		
-		driver.navigate().refresh();
-		Thread.sleep(2000);
-		un.sendKeys("admin");
-	}
 }
