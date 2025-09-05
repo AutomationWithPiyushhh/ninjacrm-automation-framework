@@ -4,22 +4,25 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class Demo2 {
+//	public static void main(String[] args) {
+//		
+//	}
 
-	@Test
-	public void case1() {
-//		System.out.println("Hey there!!!");
-		Reporter.log("Hey there!!!");
+	@Test(groups = "reg")
+	public void case4() {
+		System.out.println("Hey !!!"); // Console
+		Reporter.log("Hellow...", true); // Report
 	}
-	
-	@Test
-	public void case2() {
-//		System.out.println("Hellowwww...");
-		Reporter.log("Hellowwww...");
+
+	@Test(groups = "smoke")
+	public void case5() {
+		System.out.println("Hey !!!"); // Console
+		Reporter.log("Smoke", true); // Report
 	}
-	
-	@Test
-	public void case3() {
-//		System.out.println("How do you do ???");
-		Reporter.log("How do you do ???");
+
+	@Test(groups = "reg")
+	public void case6() {
+		System.out.println("Hey !!!"); // Console
+		Reporter.log("Hellow...", true); // Report
 	}
 }
