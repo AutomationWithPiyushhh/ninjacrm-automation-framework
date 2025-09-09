@@ -1,62 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="9" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Smoke]]>
-    </line>
-    <line>
-      <![CDATA[Hellow...]]>
-    </line>
-    <line>
-      <![CDATA[Smoke]]>
-    </line>
-    <line>
-      <![CDATA[Smoke]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-09-05T10:23:30 IST" name="Suite" finished-at="2025-09-05T10:23:30 IST" duration-ms="84">
+  <suite started-at="2025-09-09T09:55:23 IST" name="Suite" finished-at="2025-09-09T09:55:39 IST" duration-ms="16500">
     <groups>
-      <group name="smoke">
-        <method signature="Demo1.case1()[pri:0, instance:testngExtra.Demo1@1165b38]" name="case1" class="testngExtra.Demo1"/>
-        <method signature="Demo1.case3()[pri:0, instance:testngExtra.Demo1@1165b38]" name="case3" class="testngExtra.Demo1"/>
-        <method signature="Demo2.case5()[pri:0, instance:testngExtra.Demo2@702657cc]" name="case5" class="testngExtra.Demo2"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-09-05T10:23:30 IST" name="Test" finished-at="2025-09-05T10:23:30 IST" duration-ms="84">
-      <class name="testngExtra.Demo2">
-        <test-method signature="case5()[pri:0, instance:testngExtra.Demo2@702657cc]" started-at="2025-09-05T10:23:30 IST" name="case5" finished-at="2025-09-05T10:23:30 IST" duration-ms="10" status="PASS">
+    <test started-at="2025-09-09T09:55:23 IST" name="TestRunner2" finished-at="2025-09-09T09:55:36 IST" duration-ms="12670">
+      <class name="testngExtra.Demo5">
+        <test-method signature="case11()[pri:0, instance:testngExtra.Demo5@55b0dcab]" started-at="2025-09-09T09:55:23 IST" name="case11" finished-at="2025-09-09T09:55:36 IST" duration-ms="12604" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Smoke]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- case5 -->
-      </class> <!-- testngExtra.Demo2 -->
-      <class name="testngExtra.Demo3">
-        <test-method signature="case9()[pri:0, instance:testngExtra.Demo3@5b12b668]" started-at="2025-09-05T10:23:30 IST" name="case9" finished-at="2025-09-05T10:23:30 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- case11 -->
+      </class> <!-- testngExtra.Demo5 -->
+    </test> <!-- TestRunner2 -->
+    <test started-at="2025-09-09T09:55:23 IST" name="TestRunner1" finished-at="2025-09-09T09:55:36 IST" duration-ms="12811">
+      <class name="testngExtra.Demo4">
+        <test-method signature="case10()[pri:0, instance:testngExtra.Demo4@292b08d6]" started-at="2025-09-09T09:55:23 IST" name="case10" finished-at="2025-09-09T09:55:36 IST" duration-ms="12753" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Hellow...]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- case9 -->
-      </class> <!-- testngExtra.Demo3 -->
-      <class name="testngExtra.Demo1">
-        <test-method signature="case1()[pri:0, instance:testngExtra.Demo1@1165b38]" started-at="2025-09-05T10:23:30 IST" name="case1" finished-at="2025-09-05T10:23:30 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- case10 -->
+      </class> <!-- testngExtra.Demo4 -->
+    </test> <!-- TestRunner1 -->
+    <test started-at="2025-09-09T09:55:23 IST" name="TestRunner3" finished-at="2025-09-09T09:55:39 IST" duration-ms="16500">
+      <class name="testngExtra.Demo6">
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@70325e14]" started-at="2025-09-09T09:55:23 IST" name="case12" finished-at="2025-09-09T09:55:39 IST" duration-ms="16445" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Smoke]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- case1 -->
-        <test-method signature="case3()[pri:0, instance:testngExtra.Demo1@1165b38]" started-at="2025-09-05T10:23:30 IST" name="case3" finished-at="2025-09-05T10:23:30 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Smoke]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- case3 -->
-      </class> <!-- testngExtra.Demo1 -->
-    </test> <!-- Test -->
+        </test-method> <!-- case12 -->
+      </class> <!-- testngExtra.Demo6 -->
+    </test> <!-- TestRunner3 -->
   </suite> <!-- Suite -->
 </testng-results>

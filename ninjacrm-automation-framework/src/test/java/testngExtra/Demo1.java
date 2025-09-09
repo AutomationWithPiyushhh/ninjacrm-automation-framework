@@ -12,6 +12,7 @@ public class Demo1 {
 	public void case1() {
 		System.out.println("Hey !!!"); // Console
 		Reporter.log("Smoke", true); //Report
+		
 	}
 	
 	@Test(groups = "reg")
