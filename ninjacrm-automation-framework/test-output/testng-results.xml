@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T09:55:23 IST" name="Suite" finished-at="2025-09-09T09:55:39 IST" duration-ms="16500">
+  <suite started-at="2025-09-10T10:34:15 IST" name="Default suite" finished-at="2025-09-10T10:34:26 IST" duration-ms="10926">
     <groups>
     </groups>
-    <test started-at="2025-09-09T09:55:23 IST" name="TestRunner2" finished-at="2025-09-09T09:55:36 IST" duration-ms="12670">
-      <class name="testngExtra.Demo5">
-        <test-method signature="case11()[pri:0, instance:testngExtra.Demo5@55b0dcab]" started-at="2025-09-09T09:55:23 IST" name="case11" finished-at="2025-09-09T09:55:36 IST" duration-ms="12604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- case11 -->
-      </class> <!-- testngExtra.Demo5 -->
-    </test> <!-- TestRunner2 -->
-    <test started-at="2025-09-09T09:55:23 IST" name="TestRunner1" finished-at="2025-09-09T09:55:36 IST" duration-ms="12811">
-      <class name="testngExtra.Demo4">
-        <test-method signature="case10()[pri:0, instance:testngExtra.Demo4@292b08d6]" started-at="2025-09-09T09:55:23 IST" name="case10" finished-at="2025-09-09T09:55:36 IST" duration-ms="12753" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- case10 -->
-      </class> <!-- testngExtra.Demo4 -->
-    </test> <!-- TestRunner1 -->
-    <test started-at="2025-09-09T09:55:23 IST" name="TestRunner3" finished-at="2025-09-09T09:55:39 IST" duration-ms="16500">
+    <test started-at="2025-09-10T10:34:15 IST" name="Default test" finished-at="2025-09-10T10:34:26 IST" duration-ms="10926">
       <class name="testngExtra.Demo6">
-        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@70325e14]" started-at="2025-09-09T09:55:23 IST" name="case12" finished-at="2025-09-09T09:55:39 IST" duration-ms="16445" status="PASS">
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:26 IST" duration-ms="10796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case12 -->
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:26 IST" duration-ms="10857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case12 -->
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:26 IST" duration-ms="10581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case12 -->
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:26 IST" duration-ms="10177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case12 -->
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:25 IST" duration-ms="10131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case12 -->
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:26 IST" duration-ms="10167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case12 -->
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:25 IST" duration-ms="10009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case12 -->
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:26 IST" duration-ms="10746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case12 -->
+        <test-method signature="case12()[pri:0, instance:testngExtra.Demo6@292b08d6]" started-at="2025-09-10T10:34:15 IST" name="case12" finished-at="2025-09-10T10:34:26 IST" duration-ms="10625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- case12 -->
       </class> <!-- testngExtra.Demo6 -->
-    </test> <!-- TestRunner3 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

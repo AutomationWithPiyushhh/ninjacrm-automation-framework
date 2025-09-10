@@ -8,11 +8,26 @@ import org.testng.annotations.Test;
 public class Demo5 {
 	WebDriver driver;
 
+	
 	@Test
-	public void case11() throws InterruptedException {
-		driver = new EdgeDriver();
-		Thread.sleep(10000);
+	public void createCity() throws InterruptedException {
+		driver = new ChromeDriver();
+		Thread.sleep(100);
 		driver.quit();
 	}
 
+	@Test(dependsOnMethods = {"deleteCity","createCity"})
+	public void modifyCity() throws InterruptedException {
+		driver = new ChromeDriver();
+		Thread.sleep(100);
+		driver.quit();
+	}
+
+	
+	@Test(dependsOnMethods = "createCity")
+	public void deleteCity() throws InterruptedException {
+		driver = new ChromeDriver();
+		Thread.sleep(100);
+		driver.quit();
+	}
 }
