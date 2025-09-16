@@ -1,0 +1,13 @@
+<suite name="suite1">
+	<test name="test1">
+		<parameter name="un" value="admin" />
+		<parameter name="pwd" value="admin@123" />
+		<classes>
+			<class name="testngExtra.DemoForParameter">
+				<methods>
+					<include name="case21" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
