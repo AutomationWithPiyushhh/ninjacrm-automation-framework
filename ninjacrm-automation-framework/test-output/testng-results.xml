@@ -1,29 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-16T09:50:25 IST" name="suite1" finished-at="2025-09-16T09:50:25 IST" duration-ms="65">
+  <suite started-at="2025-09-16T10:16:02 IST" name="Suite" finished-at="2025-09-16T10:16:18 IST" duration-ms="16699">
     <groups>
     </groups>
-    <test started-at="2025-09-16T09:50:25 IST" name="test1" finished-at="2025-09-16T09:50:25 IST" duration-ms="65">
-      <class name="testngExtra.DemoForParameter">
-        <test-method signature="case21(java.lang.String,java.lang.String)[pri:0, instance:testngExtra.DemoForParameter@36fc695d]" started-at="2025-09-16T09:50:25 IST" name="case21" finished-at="2025-09-16T09:50:25 IST" duration-ms="19" status="PASS">
+    <test started-at="2025-09-16T10:16:02 IST" name="Test3" finished-at="2025-09-16T10:16:14 IST" duration-ms="12369">
+      <class name="testngExtra.Demo9">
+        <test-method signature="case1(java.lang.String)[pri:0, instance:testngExtra.Demo9@2002fc1d]" started-at="2025-09-16T10:16:02 IST" name="case1" finished-at="2025-09-16T10:16:14 IST" duration-ms="12309" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case21 -->
-      </class> <!-- testngExtra.DemoForParameter -->
-    </test> <!-- test1 -->
-  </suite> <!-- suite1 -->
+        </test-method> <!-- case1 -->
+      </class> <!-- testngExtra.Demo9 -->
+    </test> <!-- Test3 -->
+    <test started-at="2025-09-16T10:16:02 IST" name="Test1" finished-at="2025-09-16T10:16:14 IST" duration-ms="12388">
+      <class name="testngExtra.Demo7">
+        <test-method signature="case1(java.lang.String)[pri:0, instance:testngExtra.Demo7@38425407]" started-at="2025-09-16T10:16:02 IST" name="case1" finished-at="2025-09-16T10:16:14 IST" duration-ms="12333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1 -->
+      </class> <!-- testngExtra.Demo7 -->
+    </test> <!-- Test1 -->
+    <test started-at="2025-09-16T10:16:02 IST" name="Test2" finished-at="2025-09-16T10:16:18 IST" duration-ms="16699">
+      <class name="testngExtra.Demo8">
+        <test-method signature="case1(java.lang.String)[pri:0, instance:testngExtra.Demo8@7c9d8e2]" started-at="2025-09-16T10:16:02 IST" name="case1" finished-at="2025-09-16T10:16:18 IST" duration-ms="16644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1 -->
+      </class> <!-- testngExtra.Demo8 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>

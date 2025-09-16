@@ -8,7 +8,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Demo8 {
+public class Demo9 {
 	@Parameters("browser")
 	@Test
 	public void case1(String browser) throws InterruptedException {
