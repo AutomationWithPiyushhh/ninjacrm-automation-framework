@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [suite1]">
-  <test thread-count="5" name="test1(failed)">
-    <parameter name="username" value="Dinga"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngExtra.DemoForParameter">
+      <class name="assertion.WorkingWithSoftAssert">
         <methods>
-          <include name="case21"/>
+          <include name="case1"/>
         </methods>
-      </class> <!-- testngExtra.DemoForParameter -->
+      </class> <!-- assertion.WorkingWithSoftAssert -->
     </classes>
-  </test> <!-- test1(failed) -->
-</suite> <!-- Failed suite [suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

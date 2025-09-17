@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngExtra.Demo5">
+      <class name="assertion.WorkingWithSoftAssert">
         <methods>
-          <include name="createNewCity"/>
+          <include name="case1"/>
         </methods>
-      </class> <!-- testngExtra.Demo5 -->
+      </class> <!-- assertion.WorkingWithSoftAssert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
