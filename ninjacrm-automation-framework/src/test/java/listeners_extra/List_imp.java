@@ -1,11 +1,12 @@
 package listeners_extra;
 
-import org.testng.Assert;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -21,7 +22,11 @@ public class List_imp implements ISuiteListener, ITestListener {
 	@Override
 	public void onStart(ISuite suite) {
 
-		ExtentSparkReporter spark = new ExtentSparkReporter("./advance_reports/rep3.html");
+		LocalDateTime now = LocalDateTime.now();
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss");
+		String time = now.format(dtf);
+		
+		ExtentSparkReporter spark = new ExtentSparkReporter("./advance_reports/ "+ time +".html");
 		spark.config().setDocumentTitle("Insta-report");
 		spark.config().setReportName("login page");
 		spark.config().setTheme(Theme.DARK);
@@ -42,43 +47,38 @@ public class List_imp implements ISuiteListener, ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		test = report.createTest(result.getMethod().getMethodName());
+		System.out.println(result.getMethod().getMethodName() + " starts...");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		test.log(Status.PASS, "This is passed....");
+		System.out.println(result.getMethod().getMethodName() + " got passed...");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		test.log(Status.FAIL, "This is failed....");
+		System.out.println(result.getMethod().getMethodName() + " got failed...");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		test.log(Status.SKIP, "This is skipped....");
+		System.out.println(result.getMethod().getMethodName() + " got skipped...");
 	}
 
 }
 
-@Listeners(listeners_extra.List_imp.class)
-class JustToProve {
-
-	@Test
-	public void case1() {
-		System.out.println("hey");
-		Assert.assertTrue(true);
-	}
-
-	@Test
-	public void case2() {
-		System.out.println("hey");
-		Assert.assertTrue(false);
-	}
-
-	@Test(dependsOnMethods = "case2")
-	public void case3() {
-		System.out.println("hey");
-		Assert.assertTrue(true);
-	}
-}
+//
+//class justToprove{
+//	@Test
+//	public void demo() {
+//		LocalDateTime now = LocalDateTime.now();
+//		System.out.println(now);
+//		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss");
+//		String time = now.format(dtf);
+//		System.out.println(time);
+//		
+//	}
+//}
