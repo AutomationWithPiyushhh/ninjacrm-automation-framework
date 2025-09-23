@@ -5,7 +5,8 @@
     <classes>
       <class name="listeners_extra.JustToProve">
         <methods>
-          <include name="case1"/>
+          <include name="case2"/>
+          <include name="case3"/>
         </methods>
       </class> <!-- listeners_extra.JustToProve -->
     </classes>
